@@ -1,0 +1,1 @@
+render partial: 'job_search.jb', locals: {job_search :job_search}

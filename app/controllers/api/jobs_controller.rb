@@ -5,7 +5,7 @@ class Api::JobsController < ApplicationController
   end
 
   def create
-    @jobs = Job.new(
+    @job = Job.new(
                     position_name: params[:position_name],
                     salary: params[:salary],
                     location: params[:location],
@@ -15,8 +15,9 @@ class Api::JobsController < ApplicationController
                     schedule: params[:schedule],
                     summary: params[:summary]
                     )
-    @job.save
-    render 'show.json.jb'
+    if @job.save
+     render 'show.json.jb'
+    end
   end
 
   def show
