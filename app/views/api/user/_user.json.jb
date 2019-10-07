@@ -1,0 +1,7 @@
+{
+  user_id: user.user_id,
+  name: user.name,
+  email: user.email,
+  password: user.password,
+  password_confirmation: user.password_confirmation
+}

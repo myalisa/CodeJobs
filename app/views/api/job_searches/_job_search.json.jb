@@ -1,0 +1,7 @@
+{
+  job_id: job_search.job_id,
+  page_number: job_search.page_number,
+  city: job_search.city,
+  state: job_search.state,
+  level: job_search.level
+}
