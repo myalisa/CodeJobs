@@ -7,7 +7,8 @@ Rails.application.routes.draw do
     delete'/jobs/:id' => 'jobs#destroy'
 
     get '/jobsearches' => 'job_searches#index'
-    
+
+    get '/users' => 'users#index'
     post '/users' => 'users#create'
     
     post '/sessions' => 'sessions#create'
